@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout"
+        android:background="#ffdcd7d6"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home"
+            android:src="@drawable/home_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:onClick="goBackClicked"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_small"
+            android:layout_alignTop="@+id/home"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Help"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/magnifyButton"
+            android:background="@drawable/magnify_on"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+
+
+
+
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/topLayout"-->
+        <!--android:background="#ffdcd7d6"-->
+        <!--android:paddingBottom="10dp">-->
+        <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/home"-->
+            <!--android:src="@drawable/home_button"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:clickable="true"-->
+            <!--android:onClick="goBackClicked" />-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:src="@drawable/logo_small"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="Help"-->
+            <!--android:id="@+id/textView4"-->
+            <!--android:layout_below="@+id/imageView"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_marginBottom="5dp" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:id="@+id/magnifyButton"-->
+            <!--android:background="@drawable/magnify_on"-->
+            <!--android:layout_toRightOf="@+id/imageView"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="60dp"/>-->
+
+
+
+    <!--</RelativeLayout>-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:id="@+id/goBack"
+        android:background="@drawable/black_button"
+        android:text="Go Back"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="goBackClicked"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,262 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.podder.ullash.yourlink.MessageCommunity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout"
+        android:background="#ffdcd7d6"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home"
+            android:src="@drawable/home_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:clickable="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_small"
+            android:layout_alignTop="@+id/home"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Residence Message"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/magnifyButton"
+            android:background="@drawable/magnify_on"
+            android:layout_toLeftOf="@+id/help"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help"
+            android:src="@drawable/help_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:clickable="true" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/msg_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/msg_top">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageBox"
+            android:layout_margin="7dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dummyImage3"
+                android:src="@drawable/dummy_image"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dummyImage3"
+                android:layout_alignRight="@+id/dummyImage3"
+                android:layout_alignTop="@+id/dummyImage3"
+                android:layout_alignBottom="@+id/dummyImage3"
+                android:src="@drawable/dummy_image"
+                android:layout_margin="0.5dp"
+                android:id="@+id/friendImage" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Name"
+            android:id="@+id/friendName"
+            android:layout_toRightOf="@+id/imageBox"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_alignTop="@+id/imageBox"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msgList"
+        android:layout_below="@+id/msg_top"
+        android:layout_above="@+id/msg_box"
+        android:layout_alignLeft="@+id/msg_top"
+        android:layout_alignRight="@+id/msg_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg_box"
+        android:background="#65646A"
+        android:layout_above="@+id/tabView"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_assist"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/assist_msg"
+            android:layout_margin="5dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_photo"
+            android:layout_below="@+id/msg_assist"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/add_photo"
+            android:layout_margin="5dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgText"
+            android:background="#ffffff"
+            android:layout_toLeftOf="@+id/msg_send"
+            android:layout_toRightOf="@+id/msg_assist"
+            android:layout_alignTop="@+id/msg_assist"
+            android:layout_alignBottom="@+id/add_photo"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_send"
+            android:layout_alignTop="@+id/msg_assist"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_msg"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_cancel"
+            android:layout_alignTop="@+id/add_photo"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cancel_msg"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+
+
+    </RelativeLayout>
+
+    <!--The Tab buttons start here-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:id="@+id/tabView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/backToFnf"
+            android:background="@drawable/tab_button"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_prev"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tab2"
+            android:background="@drawable/tab_button"
+
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"> // Only works inside a RelativeLayout
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_req_link"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tabCommunityLink"
+            android:background="@drawable/tab_button"
+
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"> // Only works inside a RelativeLayout
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_com_link"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tab4"
+            android:background="@drawable/tab_button"
+
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"> // Only works inside a RelativeLayout
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_com_notice"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tabEvents"
+            android:background="@drawable/tab_button"
+
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"> // Only works inside a RelativeLayout
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_event"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

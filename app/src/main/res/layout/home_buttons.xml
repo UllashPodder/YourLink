@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/box1"
+            android:layout_weight="1"> // Only works inside a RelativeLayout
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/blue_button"
+                android:onClick="home_FnF"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_alignLeft="@+id/button1"
+                android:layout_alignTop="@+id/button1"
+                android:layout_alignRight="@+id/button1"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="here"
+                android:textColor="#ffffff"
+                android:textSize="8dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/red1"
+                android:layout_toRightOf="@+id/button1"
+                android:background="@drawable/red_notification_box"
+                android:layout_marginLeft="-10dp"
+                android:visibility="invisible" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/count1"
+                android:text=""
+                android:layout_alignLeft="@+id/red1"
+                android:layout_alignTop="@+id/red1"
+                android:layout_alignRight="@+id/red1"
+                android:layout_alignBottom="@+id/red1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/box2"
+            android:layout_weight="1"> // Only works inside a RelativeLayout
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/button2"
+                android:background="@drawable/blue_button"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignTop="@+id/button2"
+                android:layout_alignRight="@+id/button2"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="text here"
+                android:textColor="#ffffff"
+                android:textSize="8dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/red2"
+                android:layout_toRightOf="@+id/button2"
+                android:background="@drawable/red_notification_box"
+                android:layout_marginLeft="-10dp"
+                android:visibility="invisible" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/count2"
+                android:text=""
+                android:layout_alignLeft="@+id/red2"
+                android:layout_alignTop="@+id/red2"
+                android:layout_alignRight="@+id/red2"
+                android:layout_alignBottom="@+id/red2"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/box3"
+            android:layout_weight="1"> // Only works inside a RelativeLayout
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/button3"
+                android:background="@drawable/blue_button"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_alignLeft="@+id/button3"
+                android:layout_alignTop="@+id/button3"
+                android:layout_alignRight="@+id/button3"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="text here"
+                android:textColor="#ffffff"
+                android:textSize="8dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/red3"
+                android:layout_toRightOf="@+id/button3"
+                android:background="@drawable/red_notification_box"
+                android:layout_marginLeft="-10dp"
+                android:visibility="invisible" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/count3"
+                android:text=""
+                android:layout_alignLeft="@+id/red3"
+                android:layout_alignTop="@+id/red3"
+                android:layout_alignRight="@+id/red3"
+                android:layout_alignBottom="@+id/red3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

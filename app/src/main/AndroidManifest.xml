@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.podder.ullash.yourlink"
+    android:installLocation="preferExternal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".UpdateFnf"
+            android:label="@string/title_activity_create_profile" >
+        </activity>
+        <activity
+            android:name=".InviteFnF"
+            android:label="@string/title_activity_invite_fn_f" >
+        </activity>
+        <activity
+            android:name=".ProfilePhoto"
+            android:label="@string/title_activity_profile_photo" >
+        </activity>
+        <activity
+            android:name=".MyHome"
+            android:label="@string/title_activity_my_home" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".FamilyAndFriends"
+            android:label="@string/title_activity_family_and_friends" >
+        </activity>
+        <activity
+            android:name=".EventCalendar"
+            android:label="@string/title_activity_event_calendar" >
+        </activity>
+        <activity
+            android:name=".MyCommunityList"
+            android:label="@string/title_activity_my_community_list" >
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile" >
+        </activity>
+        <activity
+            android:name=".MessageFnF"
+            android:label="@string/title_activity_message_fn_f" >
+        </activity>
+        <activity
+            android:name=".CommunityLists"
+            android:label="@string/title_activity_community_lists" >
+        </activity>
+        <activity
+            android:name=".MessageCommunity"
+            android:label="@string/title_activity_message_community" >
+        </activity>
+        <activity
+            android:name=".CommunityNoticeboard"
+            android:label="@string/title_activity_community_noticeboard" >
+        </activity>
+    </application>
+
+</manifest>

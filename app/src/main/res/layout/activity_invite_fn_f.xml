@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout"
+        android:background="#ffdcd7d6"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home"
+            android:src="@drawable/home_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:clickable="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_small"
+            android:layout_alignTop="@+id/home"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Invite Family and Friends"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/magnifyButton"
+            android:background="@drawable/magnify_on"
+            android:layout_toLeftOf="@+id/help"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help"
+            android:src="@drawable/help_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:clickable="true" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/fieldContainer"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Invite"
+                        android:textColor="#ff121212"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText1"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:paddingLeft="4dp"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText2"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4dp" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText3"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4dp" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText4"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4dp" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText5"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4dp" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText6"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4dp" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText7"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:paddingLeft="4dp" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText8"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4dp" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText9"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:paddingLeft="4dp" />
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText10"
+                        android:editable="true"
+                        android:background="@drawable/textbox_bg"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="4dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:id="@+id/invite"
+                android:background="@drawable/green_button"
+                android:layout_below="@+id/fieldContainer"
+                android:layout_alignLeft="@+id/fieldContainer"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Invite"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:id="@+id/back_to_home"
+                android:background="@drawable/black_button"
+                android:layout_below="@+id/fieldContainer"
+                android:layout_alignRight="@+id/fieldContainer"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Back to Home"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:onClick="invite_fnf_backHomeClicked"
+                android:textStyle="bold"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

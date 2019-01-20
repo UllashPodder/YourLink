@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout"
+        android:background="#ffdcd7d6"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home"
+            android:src="@drawable/home_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:clickable="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_small"
+            android:layout_alignTop="@+id/home"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Update Family &amp; Friends"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/magnifyButton"
+            android:background="@drawable/magnify_on"
+            android:layout_toLeftOf="@+id/help"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help"
+            android:src="@drawable/help_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:clickable="true" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/fieldContainer"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when"
+                    android:id="@+id/textView1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:layout_width="321dp"
+                    android:layout_height="53dp"
+                    android:id="@+id/addCommunity"
+                    android:background="@drawable/add_community_button"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+                <Button
+                    android:layout_width="321dp"
+                    android:layout_height="53dp"
+                    android:id="@+id/addFnF"
+                    android:background="@drawable/add_fnf_button"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+                <Button
+                    android:layout_width="321dp"
+                    android:layout_height="53dp"
+                    android:id="@+id/addProPic"
+                    android:background="@drawable/add_pro_pic"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when"
+                    android:id="@+id/textView2"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fieldContainer"
+                android:layout_alignLeft="@+id/fieldContainer"
+                android:layout_alignRight="@+id/fieldContainer"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/proceed"
+                    android:background="@drawable/green_button"
+
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Proceed"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="10dp"
+                    android:onClick="proceedClicked"
+
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/cancel"
+                    android:background="@drawable/red_button"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Cancel"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_weight="1"
+                    android:onClick="proceedClicked"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

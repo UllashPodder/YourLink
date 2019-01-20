@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTime"
+        android:layout_alignParentLeft="true"
+        >
+        I
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dummy_image"
+            android:visibility="invisible"
+        android:id="@+id/dummyImage"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dummy_image"
+            android:layout_alignLeft="@+id/dummyImage"
+            android:layout_alignRight="@+id/dummyImage"
+            android:layout_alignTop="@+id/dummyImage"
+            android:layout_alignBottom="@+id/dummyImage"
+            android:id="@+id/loadImage"/>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dateTime"
+        android:layout_toLeftOf="@+id/monthYear"
+        android:id="@+id/linearLayout2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Title"
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text description Small Text description Small Text description Small Text description Small Text description "
+            android:id="@+id/body"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/container2"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignRight="@+id/dateTime">-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconImage"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/star_box" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sent 23:39 PM"
+                android:id="@+id/time"
+                android:layout_below="@+id/iconImage"
+                android:textColor="@android:color/black"
+                android:textSize="7dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="30 October 2014"
+                android:id="@+id/monthYear"
+                android:layout_below="@+id/time"
+                android:textColor="@android:color/black"
+                android:textSize="7dp"
+                android:layout_marginTop="2dp" />
+    <!--</RelativeLayout>-->
+</RelativeLayout>
